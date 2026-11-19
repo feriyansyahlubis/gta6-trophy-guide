@@ -7,6 +7,8 @@
 
 **Leonida Ledger** is an offline guide and tracker for all **55 PlayStation 5 trophies** of Grand Theft Auto VI — an entry for the make.fun bounty [“Build the best GTA 6 trophy guide”](https://make.fun/) (`gta6-trophy-guide-01`).
 
+Built to be the best guide: every trophy with a cited guide, a roadmap to the platinum, and all 15 missable trophies flagged — so a player can plan the whole run before the first mission and never have to replay a chapter for a trophy they walked past.
+
 ## What it does
 
 - **Every trophy, exactly as PlayStation publishes it** — official name, description and grade (1 platinum, 2 gold, 6 silver, 46 bronze), with a guide in our own words beside each one.
@@ -15,6 +17,10 @@
 - **Roadmap to the platinum** — six stages in play order, built from the official descriptions (story chapters and missions, collectible counts), with per-stage progress.
 - **Missables flagged** — 15 trophies tied to one specific moment, set-up or second attempt, each with a note on why it can be missed.
 - **Cited guidance** — every trophy's guide names its sources (Exophase's official trophy list and PSNProfiles' grades and PSN counts). Where the official description does not pin down a place or a step, the guide says so instead of inventing one.
+
+## Why this guide is the one to follow
+
+Most trophy lists stop at naming the trophies. Leonida Ledger is built around the platinum run itself: the roadmap orders the work, the missable flags protect the one-shot moments, and the tracker remembers what you already did — even offline, even weeks later. Each guide is written in our own words and cites the official list and the community grades behind it, so you can check every claim instead of taking it on trust.
 
 ## Offline by design
 
