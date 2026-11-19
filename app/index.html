@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: official names, descriptions and grades, a checklist saved in your browser, a roadmap to the platinum, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+      <h1>Leonida Ledger</h1>
+      <p class="tagline">Every one of the 55 trophies, with its official name, description and grade — a checklist that saves in your browser, a roadmap to the platinum, and a guide for each trophy that cites its sources.</p>
+    </div>
+    <div class="progress-card" id="progressCard" aria-label="Overall progress">
+      <p class="progress-big"><span id="earnedCount">0</span><span class="progress-of"> / 55</span></p>
+      <p class="progress-label">trophies earned</p>
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><span id="progressFill"></span></div>
+      <p class="progress-grades" id="gradeCounts"></p>
+      <p class="progress-note" id="platinumNote">Platinum unlocks at 55 of 55.</p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Guide sections">
+    <button type="button" class="tab is-active" data-view="tracker" id="tab-tracker">Tracker</button>
+    <button type="button" class="tab" data-view="roadmap" id="tab-roadmap">Roadmap to Platinum</button>
+    <button type="button" class="tab" data-view="missables" id="tab-missables">Missables <span class="tab-badge" id="missableCount"></span></button>
+    <button type="button" class="tab" data-view="sources" id="tab-sources">Sources &amp; Method</button>
+  </nav>
+</header>
+
+<main>
+  <section id="view-tracker" class="view is-visible" aria-label="Trophy tracker">
+    <div class="toolbar" id="toolbar">
+      <label class="search-box">Search
+        <input type="search" id="searchInput" placeholder="Search a trophy, mission or keyword…" autocomplete="off">
+      </label>
+      <fieldset class="kind-filters" id="kindFilters" aria-label="Filter by kind">
+        <legend>Kind</legend>
+      </fieldset>
+      <label class="grade-filter">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="toggle spoiler-toggle" id="spoilerToggleWrap">
+        <input type="checkbox" id="spoilerToggle">
+        <span>Hide story spoilers</span>
+      </label>
+      <label class="toggle earned-toggle">
+        <input type="checkbox" id="hideEarnedToggle">
+        <span>Hide earned</span>
+      </label>
+      <div class="io-buttons">
+        <button type="button" id="exportBtn">Export progress</button>
+        <label class="import-label">Import progress <input type="file" id="importInput" accept="application/json,.json"></label>
+        <button type="button" id="resetBtn" class="danger">Reset</button>
+      </div>
+    </div>
+    <p class="next-up" id="nextUp" aria-label="Next up"></p>
+    <div class="tracker-grid">
+      <div class="list-col">
+        <p class="list-meta" id="listMeta"></p>
+        <ul class="trophy-list" id="trophyList"></ul>
+      </div>
+      <aside class="detail-col" id="detailPane" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" aria-label="Roadmap to the platinum">
+    <p class="view-intro">The road to the platinum, in the order to play it. Each stage lists the trophies it earns, built from the official descriptions — which story chapters and missions, which collectibles and counts. Tick trophies off in the Tracker as you go; this page counts your progress per stage.</p>
+    <ol class="roadmap" id="roadmapList"></ol>
+  </section>
+
+  <section id="view-missables" class="view" aria-label="Missable trophies">
+    <p class="view-intro"><strong>Read this before you play.</strong> These trophies are flagged missable because the official description ties them to one specific moment, set-up or second attempt — a named rival, an undetected robbery, a single Combat Focus, a choice when it is offered. The rest of the list is replayable or grindable, so it can wait. Where the description does not pin down a place or a step, the guide says so instead of inventing one.</p>
+    <ul class="missable-list" id="missableList"></ul>
+  </section>
+
+  <section id="view-sources" class="view" aria-label="Sources and method">
+    <h2>Sources &amp; method</h2>
+    <p>Every trophy's <strong>name, description and grade</strong> is shown exactly as PlayStation publishes it, taken from the official list as carried by Exophase and PSNProfiles — the two agreed on every name, description and grade. Every <strong>guide</strong> is written in our own words for this guide; it may draw on other guides and wikis, but it never copies their text. Each trophy's guide names its sources beside it.</p>
+    <ul class="source-list" id="sourceList"></ul>
+    <h3>How the roadmap and missable flags were built</h3>
+    <p>Both are built from the official descriptions alone: which story chapters and missions (Chapter 1–4, the named missions, the final mission), which collectibles and counts (42 Shooting Range challenges, 14 drone-race locations, 100 vehicles, 100 WAiNK It locations, 52 areas, 18 meditation spots, 8 garage properties, 3 card sets, 9 gangs), and which trophies need one specific moment. A specific location or step with no source gets no credit in this guide — where a fact is not pinned down by a source, the guide says so.</p>
+    <h3>Your progress stays yours</h3>
+    <p>This app is static files and works with the network off. Your checklist, notes and settings are saved only in this browser (localStorage) and never leave it, except in the export file you choose to download. Import reads only the file you pick. No Rockstar logo, official artwork or game screenshot is used anywhere: the look is our own.</p>
+    <h3>Counts at a glance</h3>
+    <dl class="facts" id="factsList"></dl>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Ledger — an unofficial, open-source fan guide. Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners; this guide is not affiliated with or endorsed by Rockstar Games or PlayStation. Trophy names and descriptions are shown as PlayStation publishes them.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
